@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Team NP</title>
+
+
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" href="/images/favicon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <base href="http://npgame.gg/">
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-83796307-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body lang="en">
+  <link href="/css/home.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/blog.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="#" data-activates="sidebar" class="button-collapse"><i class="material-icons grey-text">menu</i></a>>
+    <a id="logo-container" href="index.html" class="brand-logo left">
+      <img class="logo-mini" src="images/logo_mini.png"></img>
+    </a>
+    <ul class="left hide-on-med-and-down">
+      
+        
+          <li><a href="/">
+            Home
+          </a></li>
+        
+      
+        
+          <li><a href="players">
+            Players
+          </a></li>
+        
+      
+        
+          <li><a style="cursor:pointer"
+          onclick="Materialize.toast('Coming soon!', 4000)">
+              Store
+          </a></li>
+        
+      
+        
+          <li><a href="news">
+            News
+          </a></li>
+        
+      
+        
+          <li><a href="blog">
+            Blog
+          </a></li>
+        
+      
+    </ul>
+    <ul class="side-nav" id="sidebar">
+      
+        
+          <li><a href="/">
+            Home
+          </a></li>
+        
+      
+        
+          <li><a href="players">
+            Players
+          </a></li>
+        
+      
+        
+          <li><a style="cursor:pointer"
+          onclick="Materialize.toast('Coming soon!', 4000)">
+              Store
+          </a></li>
+        
+      
+        
+          <li><a href="news">
+            News
+          </a></li>
+        
+      
+        
+          <li><a href="blog">
+            Blog
+          </a></li>
+        
+      
+    </ul>
+    <div class="right">
+      
+        <a href="https://twitter.com/NPDotA">
+          <img src="images/social/Logo_Twitter.png" class="social"></img>
+        </a>
+      
+        <a href="https://goo.gl/h6hzBD">
+          <img src="images/social/Logo_YouTube.png" class="social"></img>
+        </a>
+      
+        <a href="https://fb.me/NPDotA">
+          <img src="images/social/Logo_Facebook.png" class="social"></img>
+        </a>
+      
+        <a href="https://instagr.am/team.np">
+          <img src="images/social/Logo_Instagram.png" class="social"></img>
+        </a>
+      
+        <a href="mailto:contact@npgame.gg">
+          <img src="images/social/Logo_Email.png" class="social"></img>
+        </a>
+      
+    </div>
+  </div>
+  </nav>
+</div>
+<script>
+$(".button-collapse").sideNav();
+</script>
+
+  <script>
+$(window).scroll(function(){
+  $(".shutter").css("opacity", Math.min( (0 + $(window).scrollTop() /
+ 250), 1));
+  $(".blinds").css("opacity", Math.max( (1 - $(window).scrollTop() / 150), 0));
+});
+
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    var target = this.hash;
+    var $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 600, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+});
+</script>
+
+<div class="blinds" style="pointer-events: none; position: absolute; bottom: calc(100px - 50%); width: 100%; height: 50%; background: rgba(2,9,23,.55); text-align: center; font-size: 48px; color: rgba(255,255,255,0.9); font-weight: 300; z-index: 100"><img src="/images/banner_arrow.png" width="80px"></img ></div>
+
+    <div class="no-pad-bot" id="index-banner">
+      <div class="center">
+        <img src="kaizoumonogatari/banner.png" style="width: 100%"></img>
+      </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="section blog">
+          <h1>A Modding Story <span class="light">by saylith</span></h1>
+          
+
+<p><em>Most of you won&rsquo;t know who I am. I do work on the Team NP website.</em> <em>You might recognize some</em> <a href="http://imgur.com/UW9bXcZ"><em>of</em></a> <a href="https://twitter.com/saylith/status/670683104214953984"><em>my</em></a> <a href="https://www.reddit.com/r/DotA2/comments/3ipa4t/the_trial_of_arteezy/"><em>previous</em></a> <a href="https://manage.betterttv.net/emotes/55fcff9550b2d57b2f7ba058"><em>work</em></a>.</p>
+
+<p>I started playing Dota 2 sometime around 2012, back when invites were still needed to play, and my previous favorite game, Team Fortress 2, was beginning to lose its luster. I was a pretty average Dota 2 player. Back then I was mid-3k MMR, watched Purge&rsquo;s video guides, followed the big streamers at the time, and of course, frequented the Dota 2 subreddit.</p>
+
+<p>Two years ago, reddit user /u/thatjesushair released a <a href="https://np.reddit.com/r/Dota2Modding/comments/2fku6v/persona_4_rise_megakills_announcer_mod_for_dota_2/">megakills announcer mod</a> that used lines from Persona 4&rsquo;s Rise Kujikawa. Having recently played Persona 4, I thought the mod was both awesome and hilarious. But since I am a huge weeb, who watches anime with subs and turns on Japanese voices for games, I felt a Japanese version of the mod was needed.</p>
+
+<p><img src="http://i.imgur.com/vEQOi4g.png" alt="Jacky mao agrees" /></p>
+
+<p>I quickly learned how modding worked for Dota 2 and created a new mod that featured the Japanese VA (Rie Kugimiya). When I released that, I was modded on Envy&rsquo;s Twitch stream. I continued to work on the mod, adding more lines, more characters, and even created a <a href="http://saylith.github.io/harem-announcer/">site</a> so that people could choose how they wanted to customize it. A rough estimate based on traffic, I may have thousands, or up to tens of thousands of users.</p>
+
+<p>While the mod is still up and running to this day, ensuring that the mod worked has become increasingly difficult over the years. I decided to write this blog not to complain or to tell Valve what to do with their game, but because I see that <a href="https://np.reddit.com/r/DotA2/comments/58es8m/its_been_over_two_years_give_us_back_the_ability/">people still have interest</a> in modding the game and I felt that they would care to hear this story.</p>
+
+<h2 id="override-vpk-how-to-mod-a-valve-game">Override_VPK: How to Mod a Valve Game</h2>
+
+<p>When I originally stared modding, it was really easy to install a mod.</p>
+
+<ol>
+<li>Find the /steamapps/common/dota 2 beta/dota folder</li>
+<li>Put the correct files into that folder (In my case, the scripts and sound folder)</li>
+<li>Add -override_vpk to your launch options</li>
+</ol>
+
+<p>Looking back, it used to be so much simpler back then. Just drop the files in and add a command line option to your game.</p>
+
+<p>In order to create the mod, you needed to create folders following a specific directory structure and make sure your files were in the right places. You also might have needed to edit a few plaintext scripts.</p>
+
+<h2 id="how-pumpkins-almost-killed-modding">How Pumpkins (Almost) Killed Modding</h2>
+
+<p>However, while override_vpk was great for modding the game, some people abused it to give them an advantage in game.</p>
+
+<p><img src="http://i.imgur.com/sGgw15j.png" alt="The famous pumpkin mod" /></p>
+
+<p>There were other mods that gave advantages, like sounds with timers on them, or sounds that had their volume boosted. The above mod was posted to reddit and got a ton of upvotes and comments.</p>
+
+<p>On February 2, 2015, Valve released an update:</p>
+
+<blockquote>
+<p>The use of –override_vpk is no longer allowed in matchmaking games in order to prevent gaining a competitive advantage</p>
+</blockquote>
+
+<p>This update prompted a huge response as well. At this point it seemed like Valve, who had a huge history of modding in their games, had actually killed modding. People&rsquo;s favorite sound mods, model replacements, and icon replacements all stopped working. The backlash was pretty intense. Of course, I was very sad when I saw this patch.</p>
+
+<p>Valve again responded with another update later that day:</p>
+
+<blockquote>
+<p>Added a new launch option -enable_addons that lets you override a whitelist of files that we will be populating (currently supporting Minimap, HUD related elements, Icons and VO)</p>
+</blockquote>
+
+<p>This was Valve&rsquo;s compromise with mods. It worked just like -override_vpk, but only certain files (ones that have been whitelisted) would be allowed. This prevented people from replacing trees with pumpkins, but also did not allow people to change Tiny&rsquo;s tree to a banana either.</p>
+
+<p>Since I only modded voiceovers, my mods worked fine. Thus, I had no issues myself with this compromise, but I do know others were still disappointed with the limitations. They clung onto the hope that Valve would slowly add to the whitelist things that could not be modded to give an advantage.</p>
+
+<p>At least at this point in time, Valve had some semblence of support for Dota 2 modding.</p>
+
+<h2 id="how-reborn-almost-killed-modding">How Reborn (Almost) Killed Modding</h2>
+
+<p>Reborn was coming. Based on what we knew about Source 2, word circulated that the new engine wouldn&rsquo;t support normal file types like Source 1 did. Instead of mp3s, there were vsnd (Valve Sound) files. Unless modders figured out a way to get mods working again, it seemed like mods wouldn&rsquo;t be a thing anymore.</p>
+
+<p>Unfortunately, there was not a lot of help for people who wanted to get their mods working on Reborn. The only thing I really knew was that the old formats wouldn&rsquo;t work. Everyone in the space was honestly more interested in making custom games. I felt the sentiment was that client-side mods were out of fashion; that they were low effort, and of no value.</p>
+
+<p>I did not give up. Luckily there was a period of time where Reborn was still in beta but Valve still released tools for working with the new engine. I downloaded the Dota 2 Workshop tools and tried to see what I could do.</p>
+
+<p>Converting the files was actually one of the easier things to do. If you put the original sound files into the content folder associated with a mod, the workshop tools could generate the corresponding Valve compiled file in the game folder.</p>
+
+<p><img src="http://i.imgur.com/yFqunav.png" alt="tools" /></p>
+
+<p>The more clever thing I had to figure out was how to get the files loading into the game. While Source 1 had both -override_vpk and -enable_addons, Source 2 had neither. None of the documentation seemed to mention a similar feature either.</p>
+
+<p>I was close to giving up until I noticed something in the workshop tools. In the launcher, there was an option &ldquo;Set As Default&rdquo; so that when you launched the Workshop tools you could automatically start developing or debugging that custom game. It generated a command line that looked just like the launch options you would set through Steam.</p>
+
+<p><img src="http://i.imgur.com/1hcoqz5.png" alt="tools" /></p>
+
+<p>After some experimenting I learned that you could run the normal Reborn client with the following settings to the mod working:</p>
+
+<ol>
+<li>Add -addon mod to my launch options, where mod is the name of my mod</li>
+<li>Add -tools to my launch options</li>
+<li>Launch Dota 2 normally (don&rsquo;t use the workshop tools)</li>
+</ol>
+
+<p>Proud of my discovery, I reworked my mod to work on both Source 1 and Source 2 at the time.</p>
+
+<p>The only problem now, is that the process is so much more difficult for a normal user to do. Because of this, I had to write a script that put the files in the right places, used the workshop tools to compile the files, then told the user to use the correct launch options. It was a huge pain to write and debug. Also, anyone on a 32-bit machine couldn&rsquo;t get it working since the Workshop tools are 64-bit only.</p>
+
+<h2 id="concerns">Concerns</h2>
+
+<p>One concern I had was that at this point, I discovered a method that worked a lot like -override_vpk. I knew that using this you would be able to do the old model replacements that got -override_vpk removed in the first place. I decided not to broadcast the methods I was using to other modders, but quietly released my updated mod to social media.</p>
+
+<p>A second concern I had, was would I get a VAC ban for doing this? This was new territory and I had no idea what Valve might decide to do in the future. Would someone make a reddit post and my users and I would all get banned? I decided in the end that I would risk it. I made sure to write a warning of the possible consequences and released the new mod.</p>
+
+<p>But Dota 2 modding was a niche I found in the community. I would not be where I am today if I hadn&rsquo;t created and supported this mod. I felt I would be letting everyone down if I didn&rsquo;t continue.</p>
+
+<h2 id="how-reborn-killed-almost-modding-again">How Reborn Killed (Almost) Modding Again</h2>
+
+<p>Unfortunately, this iteration of modding didn&rsquo;t last very long. At some point, adding the -tools launch option always sent your client to the Workshop tools and prevented you from matchmaking. I tried looking for the exact patch that made this change but I couldn&rsquo;t, because it was not even mentioned in the changelog. I think the patch notes by Belvedere said &ldquo;Minor text changes&rdquo; or something like that.</p>
+
+<p>At this point, I did not know what to think. We&rsquo;ve gone through three launch options:</p>
+
+<ol>
+<li>override_vpk</li>
+<li>enable_addons</li>
+<li>tools</li>
+</ol>
+
+<p>Was this a sign from Gabe to stop trying to make mods work? Should I just give up? I almost did.</p>
+
+<p>I found some other mods that claimed that they were still working. The method can be described as the following:</p>
+
+<ol>
+<li>Generate VPK files from your compiled mod</li>
+<li>Create a directory for your mods in /dota2 beta/game</li>
+<li>Edit the &ldquo;gameinfo.gi&rdquo; and add a single line to it. (See image below)</li>
+</ol>
+
+<p><img src="http://i.imgur.com/nGmCYHf.png" alt="gameinfo.gi" /></p>
+
+<p>The I tried this method out and it worked. One thing I noticed was that if the line was added below the &ldquo;Game dota&rdquo; line, it wouldn&rsquo;t work.  This is because the game goes down through the list and load assets in the same order as the gameinfo file. If the mods folder is loaded before the dota folder, then the modded asset will be loaded first. Then when the dota folder is loaded, the asset is already there, and is skipped. The game will end up using the first version of the file loaded.</p>
+
+<p>Just as a side note, in my opinion, this is a form of VPK injection. Many people have the believe that VPK injection means that you modify a VPK file (which you definitely shouldn&rsquo;t do). It actually follows a very similar method to <a href="https://en.wikipedia.org/wiki/DLL_injection">DLL injection</a> in which certain files are loaded before others based on location or a configuration file. However, override_vpk and enable_addons work in a very similar way as well.</p>
+
+<h2 id="concerns-continued">Concerns (Continued)</h2>
+
+<p>In my mind, this method was much more dangerous than the one I was using before. My method made no changes to existing files, while this one did. This method never modifies any VPKs or binaries, but it still modifies a file. Both methods could be used to enable the unfair mods again. I felt as if I was cornered.</p>
+
+<p>If only we still had enable_addons.</p>
+
+<p>Then I could mod without fear of a ban.</p>
+
+<p>Then I could assure my users that they would not be banned.</p>
+
+<p>At this point I felt more like a hacker than a modder.</p>
+
+<p>I tried to explain carefully on my site what my users would be getting into if they installed the new version of the mod.</p>
+
+<p>What if my users don&rsquo;t read it?</p>
+
+<p>What if they can&rsquo;t read it? Looking back, many of my viewers don&rsquo;t have the best English.</p>
+
+<p>At some point, in my mind, I thought that if enough people did this, Valve wouldn&rsquo;t be willing to ban so many people.</p>
+
+<p>I still don&rsquo;t know if I made a mistake that day.</p>
+
+<h2 id="a-better-way">A Better Way</h2>
+
+<p>Unsatisfied with the current situation I was in, I looked to see if there was anything I could do.</p>
+
+<p>I noticed in the gameinfo.gi file, above &ldquo;Game dota&rdquo; there are two lines within SearchPaths.</p>
+
+<ol>
+<li>Game_Language dota_*LANGUAGE*</li>
+<li>Game_LowViolence dota_lv</li>
+</ol>
+
+<p>I thought that maybe I could use one of these instead of modifying the file. It turns out that for each language, there is a separate dota folder.</p>
+
+<p><img src="http://i.imgur.com/bz2Tu6b.png" alt="langauges" /></p>
+
+<p>There is also the launch option -language that allows you to specify the language of your dota client. I learned that if you specify a language that does not exist, it used English by default. I then tried if I could create a dota_mods folder in the same place. and then use -language mods. This method worked!</p>
+
+<p>I quickly updated my mod to use the new method. Unfortunately a user noticed that using this method breaks the activity feed. Nonetheless, I figured out a method that didn&rsquo;t require modifying any files and felt a little better about distributing the mod.</p>
+
+<p>Again, I did not tell other modders about this method. I didn&rsquo;t want the method to receive too much attention and for it to go away, and the others seemed to be fine with editing gameinfo.gi. I wanted to be one step ahead.</p>
+
+<h2 id="modding-today">Modding Today</h2>
+
+<p>Why am I posting all of this now? To be fair there were several months, or maybe even years, between all of these episodes.</p>
+
+<p>The main reason is that people are being much more public with the gameinfo.gi method and posting it onto reddit, and writing guides. People are still interesting in modding, and perhaps getting themselves into areas  more greyer than they may need to.</p>
+
+<p>There&rsquo;s also a lot of what I consider to be misinformation out there too. Honestly reddit is pretty often wrong about things they don&rsquo;t understand and just ends up perpetuating false information.</p>
+
+<p>I also have kind of wanted to write this blog for a while on a more personal level. I hope you have enjoyed the ride.</p>
+
+<h2 id="how-valve-could-support-modding-again">How Valve Could Support Modding Again</h2>
+
+<p>I said I wasn&rsquo;t going to tell Valve what to do, but I remembered an idea I had that I just wanted to throw out there.</p>
+
+<p>Remember enable_addons, back from Source1? The compromise you made with the modding scene?</p>
+
+<blockquote>
+<p>Added a new launch option -enable_addons that lets you override a whitelist of files that we will be populating (currently supporting Minimap, HUD related elements, Icons and VO)</p>
+</blockquote>
+
+<p>You could made this change to gameinfo.gi officially.</p>
+
+<p><img src="http://i.imgur.com/5VzAt0W.png" alt="idea" /></p>
+
+<p>Then you would need to put the &ldquo;Minimap, HUD related elements, Icons and VO&rdquo; assets into the dota2_whitelisted folder. Third-party mods would then go into the mods folder.</p>
+
+<p>Then the stuff that is important for game balance would have precedence over the mods, while mods would have precedence over the things that were whitelisted before and have no balance implications.</p>
+
+<p>Volvo pls fix.</p>
+
+<p>Also Volvo pls dont ban me or my users.</p>
+
+<p>- <a href="http://twitter.com/saylith">@saylith</a></p>
+
+          
+        </div>
+      </div>
+  </div>
+</body>
+<script>
+$(document).ready(function(){
+  $('figure').find("img").addClass("materialboxed")
+  $('.materialboxed').materialbox();
+});
+</script>
+<footer class="page-footer light-blue darken-1">
+<div class="container">
+  <div class="row">
+    <div class="col l3 s12">
+      <h5 class="white-text">Site</h5>
+      <ul>
+        
+          
+            <li><a class="white-text" href="/">Home</a></li>
+          
+        
+          
+            <li><a class="white-text" href="players">Players</a></li>
+          
+        
+          
+            <li><a class="white-text" style="cursor:pointer" onclick="Materialize.toast('Coming soon!', 4000)">Store</a></li>
+          
+        
+          
+            <li><a class="white-text" href="news">News</a></li>
+          
+        
+          
+            <li><a class="white-text" href="blog">Blog</a></li>
+          
+        
+        <li><a class="white-text" href="https://mega.nz/#!aMp3FAqZ!DubeNUokdG0hF_qA7IEWCW8fK7-CEJDAqJ7Z_EEQHi0">Media</a></li>
+      </ul>
+    </div>
+    <div class="col l3 s12">
+      <h5 class="white-text">Connect</h5>
+      <ul>
+        
+          <li><a class="white-text" href="https://twitter.com/NPDotA">Twitter</a></li>
+        
+          <li><a class="white-text" href="https://goo.gl/h6hzBD">Youtube</a></li>
+        
+          <li><a class="white-text" href="https://fb.me/NPDotA">Facebook</a></li>
+        
+          <li><a class="white-text" href="https://instagr.am/team.np">Instagram</a></li>
+        
+          <li><a class="white-text" href="mailto:contact@npgame.gg">Email</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+    <a class="brown-text text-lighten-4">© 2016 TEAM NP LLC. ALL RIGHTS RESERVED.</a>
+  </div>
+</div>
+</footer>
+
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+

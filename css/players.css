@@ -1,0 +1,132 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #03a9f4;
+}
+h1 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0;
+}
+h2 {
+  font-size: 1rem;
+  line-height: 100%;
+  margin: 0.5rem 0 0.4rem 0;
+}
+p {
+  line-height: 2rem;
+  color: #212121;
+  font-weight: 300;
+}
+.banner {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: url('../images/banner_background.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 960px;
+}
+.logo {
+  margin-top: 5em;
+  position: relative;
+  background: url('../images/banner_logo_w500.png') no-repeat center center;
+  height: 55em;
+  background-size: auto 500px;
+}
+.shutter {
+  opacity: 0;
+}
+.caption {
+  margin-top: 4em;
+}
+.caption > span {
+  color: white;
+  font-size: 9rem;
+  font-weight: 200;
+}
+.caption1 {
+  left: 50%;
+  top: 1em;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.caption2 {
+  top: 45em;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.arrow {
+  bottom: -6em;
+  left: 50%;
+  width: 5em;
+  max-width: 92px;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+@media only screen and (max-width : 950px) {
+  .banner {
+    min-height: 600px;
+    height: 20em;
+  }
+  .logo {
+    height: 35em;
+    background-size: auto 250px;
+  }
+  .caption > span {
+    font-size: 4rem;
+  }
+  .caption1 {
+    top: 4em;
+  }
+  .caption2 {
+    top: 27em;
+  }
+}
+.parallax-container {
+  min-height: 35em;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  width: 100%;
+  overflow: hidden;
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.portrait-container {
+  width: 40% !important;
+  position:relative;
+  display:inline;
+}
+.portrait {
+  position: absolute;
+  height: 30em;
+  bottom: 1em;
+  left: 1em;
+}
+@media only screen and (max-width : 950px) {
+  .parallax-container {
+    min-height: 30em;
+  }
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  .portrait-container {
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80% !important;
+  }
+  .portrait {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25em;
+  }
+}

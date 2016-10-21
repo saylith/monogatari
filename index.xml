@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Team NP</title>
+    <link>http://npgame.gg/index.xml</link>
+    <description>Recent content on Team NP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Oct 2016 00:14:00 +0000</lastBuildDate>
+    <atom:link href="http://npgame.gg/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>kaizoumonogatari</title>
+      <link>http://npgame.gg/blog/kaizoumonogatari/</link>
+      <pubDate>Fri, 21 Oct 2016 00:14:00 +0000</pubDate>
+      
+      <guid>http://npgame.gg/blog/kaizoumonogatari/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Most of you won&amp;rsquo;t know who I am. I do work on the Team NP website.&lt;/em&gt; &lt;em&gt;You might recognize some&lt;/em&gt; &lt;a href=&#34;http://imgur.com/UW9bXcZ&#34;&gt;&lt;em&gt;of&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/saylith/status/670683104214953984&#34;&gt;&lt;em&gt;my&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;https://www.reddit.com/r/DotA2/comments/3ipa4t/the_trial_of_arteezy/&#34;&gt;&lt;em&gt;previous&lt;/em&gt;&lt;/a&gt; &lt;a href=&#34;https://manage.betterttv.net/emotes/55fcff9550b2d57b2f7ba058&#34;&gt;&lt;em&gt;work&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I started playing Dota 2 sometime around 2012, back when invites were still needed to play, and my previous favorite game, Team Fortress 2, was beginning to lose its luster. I was a pretty average Dota 2 player. Back then I was mid-3k MMR, watched Purge&amp;rsquo;s video guides, followed the big streamers at the time, and of course, frequented the Dota 2 subreddit.&lt;/p&gt;
+
+&lt;p&gt;Two years ago, reddit user /u/thatjesushair released a &lt;a href=&#34;https://np.reddit.com/r/Dota2Modding/comments/2fku6v/persona_4_rise_megakills_announcer_mod_for_dota_2/&#34;&gt;megakills announcer mod&lt;/a&gt; that used lines from Persona 4&amp;rsquo;s Rise Kujikawa. Having recently played Persona 4, I thought the mod was both awesome and hilarious. But since I am a huge weeb, who watches anime with subs and turns on Japanese voices for games, I felt a Japanese version of the mod was needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/vEQOi4g.png&#34; alt=&#34;Jacky mao agrees&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I quickly learned how modding worked for Dota 2 and created a new mod that featured the Japanese VA (Rie Kugimiya). When I released that, I was modded on Envy&amp;rsquo;s Twitch stream. I continued to work on the mod, adding more lines, more characters, and even created a &lt;a href=&#34;http://saylith.github.io/harem-announcer/&#34;&gt;site&lt;/a&gt; so that people could choose how they wanted to customize it. A rough estimate based on traffic, I may have thousands, or up to tens of thousands of users.&lt;/p&gt;
+
+&lt;p&gt;While the mod is still up and running to this day, ensuring that the mod worked has become increasingly difficult over the years. I decided to write this blog not to complain or to tell Valve what to do with their game, but because I see that &lt;a href=&#34;https://np.reddit.com/r/DotA2/comments/58es8m/its_been_over_two_years_give_us_back_the_ability/&#34;&gt;people still have interest&lt;/a&gt; in modding the game and I felt that they would care to hear this story.&lt;/p&gt;
+
+&lt;h2 id=&#34;override-vpk-how-to-mod-a-valve-game&#34;&gt;Override_VPK: How to Mod a Valve Game&lt;/h2&gt;
+
+&lt;p&gt;When I originally stared modding, it was really easy to install a mod.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Find the /steamapps/common/dota 2 beta/dota folder&lt;/li&gt;
+&lt;li&gt;Put the correct files into that folder (In my case, the scripts and sound folder)&lt;/li&gt;
+&lt;li&gt;Add -override_vpk to your launch options&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Looking back, it used to be so much simpler back then. Just drop the files in and add a command line option to your game.&lt;/p&gt;
+
+&lt;p&gt;In order to create the mod, you needed to create folders following a specific directory structure and make sure your files were in the right places. You also might have needed to edit a few plaintext scripts.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-pumpkins-almost-killed-modding&#34;&gt;How Pumpkins (Almost) Killed Modding&lt;/h2&gt;
+
+&lt;p&gt;However, while override_vpk was great for modding the game, some people abused it to give them an advantage in game.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/sGgw15j.png&#34; alt=&#34;The famous pumpkin mod&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were other mods that gave advantages, like sounds with timers on them, or sounds that had their volume boosted. The above mod was posted to reddit and got a ton of upvotes and comments.&lt;/p&gt;
+
+&lt;p&gt;On February 2, 2015, Valve released an update:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The use of –override_vpk is no longer allowed in matchmaking games in order to prevent gaining a competitive advantage&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This update prompted a huge response as well. At this point it seemed like Valve, who had a huge history of modding in their games, had actually killed modding. People&amp;rsquo;s favorite sound mods, model replacements, and icon replacements all stopped working. The backlash was pretty intense. Of course, I was very sad when I saw this patch.&lt;/p&gt;
+
+&lt;p&gt;Valve again responded with another update later that day:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Added a new launch option -enable_addons that lets you override a whitelist of files that we will be populating (currently supporting Minimap, HUD related elements, Icons and VO)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This was Valve&amp;rsquo;s compromise with mods. It worked just like -override_vpk, but only certain files (ones that have been whitelisted) would be allowed. This prevented people from replacing trees with pumpkins, but also did not allow people to change Tiny&amp;rsquo;s tree to a banana either.&lt;/p&gt;
+
+&lt;p&gt;Since I only modded voiceovers, my mods worked fine. Thus, I had no issues myself with this compromise, but I do know others were still disappointed with the limitations. They clung onto the hope that Valve would slowly add to the whitelist things that could not be modded to give an advantage.&lt;/p&gt;
+
+&lt;p&gt;At least at this point in time, Valve had some semblence of support for Dota 2 modding.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-reborn-almost-killed-modding&#34;&gt;How Reborn (Almost) Killed Modding&lt;/h2&gt;
+
+&lt;p&gt;Reborn was coming. Based on what we knew about Source 2, word circulated that the new engine wouldn&amp;rsquo;t support normal file types like Source 1 did. Instead of mp3s, there were vsnd (Valve Sound) files. Unless modders figured out a way to get mods working again, it seemed like mods wouldn&amp;rsquo;t be a thing anymore.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, there was not a lot of help for people who wanted to get their mods working on Reborn. The only thing I really knew was that the old formats wouldn&amp;rsquo;t work. Everyone in the space was honestly more interested in making custom games. I felt the sentiment was that client-side mods were out of fashion; that they were low effort, and of no value.&lt;/p&gt;
+
+&lt;p&gt;I did not give up. Luckily there was a period of time where Reborn was still in beta but Valve still released tools for working with the new engine. I downloaded the Dota 2 Workshop tools and tried to see what I could do.&lt;/p&gt;
+
+&lt;p&gt;Converting the files was actually one of the easier things to do. If you put the original sound files into the content folder associated with a mod, the workshop tools could generate the corresponding Valve compiled file in the game folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/yFqunav.png&#34; alt=&#34;tools&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The more clever thing I had to figure out was how to get the files loading into the game. While Source 1 had both -override_vpk and -enable_addons, Source 2 had neither. None of the documentation seemed to mention a similar feature either.&lt;/p&gt;
+
+&lt;p&gt;I was close to giving up until I noticed something in the workshop tools. In the launcher, there was an option &amp;ldquo;Set As Default&amp;rdquo; so that when you launched the Workshop tools you could automatically start developing or debugging that custom game. It generated a command line that looked just like the launch options you would set through Steam.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/1hcoqz5.png&#34; alt=&#34;tools&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After some experimenting I learned that you could run the normal Reborn client with the following settings to the mod working:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add -addon mod to my launch options, where mod is the name of my mod&lt;/li&gt;
+&lt;li&gt;Add -tools to my launch options&lt;/li&gt;
+&lt;li&gt;Launch Dota 2 normally (don&amp;rsquo;t use the workshop tools)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Proud of my discovery, I reworked my mod to work on both Source 1 and Source 2 at the time.&lt;/p&gt;
+
+&lt;p&gt;The only problem now, is that the process is so much more difficult for a normal user to do. Because of this, I had to write a script that put the files in the right places, used the workshop tools to compile the files, then told the user to use the correct launch options. It was a huge pain to write and debug. Also, anyone on a 32-bit machine couldn&amp;rsquo;t get it working since the Workshop tools are 64-bit only.&lt;/p&gt;
+
+&lt;h2 id=&#34;concerns&#34;&gt;Concerns&lt;/h2&gt;
+
+&lt;p&gt;One concern I had was that at this point, I discovered a method that worked a lot like -override_vpk. I knew that using this you would be able to do the old model replacements that got -override_vpk removed in the first place. I decided not to broadcast the methods I was using to other modders, but quietly released my updated mod to social media.&lt;/p&gt;
+
+&lt;p&gt;A second concern I had, was would I get a VAC ban for doing this? This was new territory and I had no idea what Valve might decide to do in the future. Would someone make a reddit post and my users and I would all get banned? I decided in the end that I would risk it. I made sure to write a warning of the possible consequences and released the new mod.&lt;/p&gt;
+
+&lt;p&gt;But Dota 2 modding was a niche I found in the community. I would not be where I am today if I hadn&amp;rsquo;t created and supported this mod. I felt I would be letting everyone down if I didn&amp;rsquo;t continue.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-reborn-killed-almost-modding-again&#34;&gt;How Reborn Killed (Almost) Modding Again&lt;/h2&gt;
+
+&lt;p&gt;Unfortunately, this iteration of modding didn&amp;rsquo;t last very long. At some point, adding the -tools launch option always sent your client to the Workshop tools and prevented you from matchmaking. I tried looking for the exact patch that made this change but I couldn&amp;rsquo;t, because it was not even mentioned in the changelog. I think the patch notes by Belvedere said &amp;ldquo;Minor text changes&amp;rdquo; or something like that.&lt;/p&gt;
+
+&lt;p&gt;At this point, I did not know what to think. We&amp;rsquo;ve gone through three launch options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;override_vpk&lt;/li&gt;
+&lt;li&gt;enable_addons&lt;/li&gt;
+&lt;li&gt;tools&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Was this a sign from Gabe to stop trying to make mods work? Should I just give up? I almost did.&lt;/p&gt;
+
+&lt;p&gt;I found some other mods that claimed that they were still working. The method can be described as the following:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Generate VPK files from your compiled mod&lt;/li&gt;
+&lt;li&gt;Create a directory for your mods in /dota2 beta/game&lt;/li&gt;
+&lt;li&gt;Edit the &amp;ldquo;gameinfo.gi&amp;rdquo; and add a single line to it. (See image below)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/nGmCYHf.png&#34; alt=&#34;gameinfo.gi&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The I tried this method out and it worked. One thing I noticed was that if the line was added below the &amp;ldquo;Game dota&amp;rdquo; line, it wouldn&amp;rsquo;t work.  This is because the game goes down through the list and load assets in the same order as the gameinfo file. If the mods folder is loaded before the dota folder, then the modded asset will be loaded first. Then when the dota folder is loaded, the asset is already there, and is skipped. The game will end up using the first version of the file loaded.&lt;/p&gt;
+
+&lt;p&gt;Just as a side note, in my opinion, this is a form of VPK injection. Many people have the believe that VPK injection means that you modify a VPK file (which you definitely shouldn&amp;rsquo;t do). It actually follows a very similar method to &lt;a href=&#34;https://en.wikipedia.org/wiki/DLL_injection&#34;&gt;DLL injection&lt;/a&gt; in which certain files are loaded before others based on location or a configuration file. However, override_vpk and enable_addons work in a very similar way as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;concerns-continued&#34;&gt;Concerns (Continued)&lt;/h2&gt;
+
+&lt;p&gt;In my mind, this method was much more dangerous than the one I was using before. My method made no changes to existing files, while this one did. This method never modifies any VPKs or binaries, but it still modifies a file. Both methods could be used to enable the unfair mods again. I felt as if I was cornered.&lt;/p&gt;
+
+&lt;p&gt;If only we still had enable_addons.&lt;/p&gt;
+
+&lt;p&gt;Then I could mod without fear of a ban.&lt;/p&gt;
+
+&lt;p&gt;Then I could assure my users that they would not be banned.&lt;/p&gt;
+
+&lt;p&gt;At this point I felt more like a hacker than a modder.&lt;/p&gt;
+
+&lt;p&gt;I tried to explain carefully on my site what my users would be getting into if they installed the new version of the mod.&lt;/p&gt;
+
+&lt;p&gt;What if my users don&amp;rsquo;t read it?&lt;/p&gt;
+
+&lt;p&gt;What if they can&amp;rsquo;t read it? Looking back, many of my viewers don&amp;rsquo;t have the best English.&lt;/p&gt;
+
+&lt;p&gt;At some point, in my mind, I thought that if enough people did this, Valve wouldn&amp;rsquo;t be willing to ban so many people.&lt;/p&gt;
+
+&lt;p&gt;I still don&amp;rsquo;t know if I made a mistake that day.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-better-way&#34;&gt;A Better Way&lt;/h2&gt;
+
+&lt;p&gt;Unsatisfied with the current situation I was in, I looked to see if there was anything I could do.&lt;/p&gt;
+
+&lt;p&gt;I noticed in the gameinfo.gi file, above &amp;ldquo;Game dota&amp;rdquo; there are two lines within SearchPaths.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Game_Language dota_*LANGUAGE*&lt;/li&gt;
+&lt;li&gt;Game_LowViolence dota_lv&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I thought that maybe I could use one of these instead of modifying the file. It turns out that for each language, there is a separate dota folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/bz2Tu6b.png&#34; alt=&#34;langauges&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is also the launch option -language that allows you to specify the language of your dota client. I learned that if you specify a language that does not exist, it used English by default. I then tried if I could create a dota_mods folder in the same place. and then use -language mods. This method worked!&lt;/p&gt;
+
+&lt;p&gt;I quickly updated my mod to use the new method. Unfortunately a user noticed that using this method breaks the activity feed. Nonetheless, I figured out a method that didn&amp;rsquo;t require modifying any files and felt a little better about distributing the mod.&lt;/p&gt;
+
+&lt;p&gt;Again, I did not tell other modders about this method. I didn&amp;rsquo;t want the method to receive too much attention and for it to go away, and the others seemed to be fine with editing gameinfo.gi. I wanted to be one step ahead.&lt;/p&gt;
+
+&lt;h2 id=&#34;modding-today&#34;&gt;Modding Today&lt;/h2&gt;
+
+&lt;p&gt;Why am I posting all of this now? To be fair there were several months, or maybe even years, between all of these episodes.&lt;/p&gt;
+
+&lt;p&gt;The main reason is that people are being much more public with the gameinfo.gi method and posting it onto reddit, and writing guides. People are still interesting in modding, and perhaps getting themselves into areas  more greyer than they may need to.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s also a lot of what I consider to be misinformation out there too. Honestly reddit is pretty often wrong about things they don&amp;rsquo;t understand and just ends up perpetuating false information.&lt;/p&gt;
+
+&lt;p&gt;I also have kind of wanted to write this blog for a while on a more personal level. I hope you have enjoyed the ride.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-valve-could-support-modding-again&#34;&gt;How Valve Could Support Modding Again&lt;/h2&gt;
+
+&lt;p&gt;I said I wasn&amp;rsquo;t going to tell Valve what to do, but I remembered an idea I had that I just wanted to throw out there.&lt;/p&gt;
+
+&lt;p&gt;Remember enable_addons, back from Source1? The compromise you made with the modding scene?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Added a new launch option -enable_addons that lets you override a whitelist of files that we will be populating (currently supporting Minimap, HUD related elements, Icons and VO)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You could made this change to gameinfo.gi officially.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/5VzAt0W.png&#34; alt=&#34;idea&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you would need to put the &amp;ldquo;Minimap, HUD related elements, Icons and VO&amp;rdquo; assets into the dota2_whitelisted folder. Third-party mods would then go into the mods folder.&lt;/p&gt;
+
+&lt;p&gt;Then the stuff that is important for game balance would have precedence over the mods, while mods would have precedence over the things that were whitelisted before and have no balance implications.&lt;/p&gt;
+
+&lt;p&gt;Volvo pls fix.&lt;/p&gt;
+
+&lt;p&gt;Also Volvo pls dont ban me or my users.&lt;/p&gt;
+
+&lt;p&gt;- &lt;a href=&#34;http://twitter.com/saylith&#34;&gt;@saylith&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>fym</title>
+      <link>http://npgame.gg/news/fym/</link>
+      <pubDate>Tue, 18 Oct 2016 21:53:34 +0000</pubDate>
+      
+      <guid>http://npgame.gg/news/fym/</guid>
+      <description>&lt;p&gt;We are proud to announce our first official sponsor: &lt;strong&gt;FYM Hot Sauce!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;With multiple hot sauce lovers on the team, we thought this would be a cool opportunity to do something unique with Dota 2 sponsorships.&lt;/p&gt;
+
+&lt;p&gt;Made with fresh ingredients and a home-made touch, this hot sauce packs a punch! You can &lt;a href=&#34;https://fymhotsauce.rocks/?utm_source=TEAMNP&amp;amp;utm_medium=WEBSITE&amp;amp;utm_campaign=ANNOUNCEMENT&#34;&gt;order online&lt;/a&gt; or pick them up in &lt;a href=&#34;https://fymhotsauce.rocks/pages/where-to-buy&#34;&gt;select stores&lt;/a&gt; in Portland, Oregon.&lt;/p&gt;
+
+&lt;p&gt;As a special promotion, use the code &amp;ldquo;&lt;strong&gt;SUPPORTNP&lt;/strong&gt;&amp;rdquo; during checkout for 10% off all purchases!&lt;/p&gt;
+
+&lt;p&gt;You can support Team NP by purchasing today:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fymhotsauce.rocks/?utm_source=TEAMNP&amp;amp;utm_medium=WEBSITE&amp;amp;utm_campaign=ANNOUNCEMENT&#34;&gt;&lt;div style=&#34;width: 40%; text-align:center; margin: auto&#34;&gt;&lt;img style=&#34;width: 100%&#34; src=&#34;http://npgame.gg/fym/sticker.png&#34; &gt;&lt;div&gt;Click me!&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Website: &lt;a href=&#34;https://fymhotsauce.rocks/&#34;&gt;https://fymhotsauce.rocks/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/FYMHotSauce&#34;&gt;&lt;img style=&#34;width: 32px&#34; src=&#34;http://npgame.gg/images/social/Logo_Twitter.png&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://facebook.com/fymhotsauce&#34;&gt;&lt;img style=&#34;width: 32px&#34; src=&#34;http://npgame.gg/images/social/Logo_Facebook.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;P.S. Look forward to cooking videos featuring our players &amp;amp; special hot sauce recipes!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>summit6-qual</title>
+      <link>http://npgame.gg/news/summit6-qual/</link>
+      <pubDate>Tue, 18 Oct 2016 03:05:11 +0000</pubDate>
+      
+      <guid>http://npgame.gg/news/summit6-qual/</guid>
+      <description>&lt;p&gt;Team NP qualifies for their first LAN in a Bo5 versus Complexity (3-2).&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Team &lt;a href=&#34;https://twitter.com/NPDotA&#34;&gt;@NPDotA&lt;/a&gt; have won the grand final 3-2 and qualified for &lt;a href=&#34;https://twitter.com/hashtag/TheSummit6?src=hash&#34;&gt;#TheSummit6&lt;/a&gt;! &lt;a href=&#34;https://t.co/bpkYKiIR5d&#34;&gt;pic.twitter.com/bpkYKiIR5d&lt;/a&gt;&lt;/p&gt;&amp;mdash; Beyond the Summit (@BeyondTheSummit) &lt;a href=&#34;https://twitter.com/BeyondTheSummit/status/788214000966172672&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Thank you &lt;a href=&#34;https://twitter.com/BeyondTheSummit&#34;&gt;@BeyondTheSummit&lt;/a&gt; for the great qualifiers and GGs to &lt;a href=&#34;https://twitter.com/compLexityLive&#34;&gt;@compLexityLive&lt;/a&gt;! Looking forward to our first LAN as a team!&lt;/p&gt;&amp;mdash; Team NP (@NPDotA) &lt;a href=&#34;https://twitter.com/NPDotA/status/788216589304762368&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what our players had to say after their victory:&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;God dam, secured that lan slot. gg &lt;a href=&#34;https://twitter.com/compLexityLive&#34;&gt;@compLexityLive&lt;/a&gt;&lt;/p&gt;&amp;mdash; Theeban Siva (@1437x) &lt;a href=&#34;https://twitter.com/1437x/status/788214118654308356&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;first summit god bless&lt;/p&gt;&amp;mdash; Arif (@MSSDota) &lt;a href=&#34;https://twitter.com/MSSDota/status/788213867449122816&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;qualified for sumimt 3-2! GG &lt;a href=&#34;https://twitter.com/compLexityLive&#34;&gt;@compLexityLive&lt;/a&gt; Getting some c9 heartattack ptsd&lt;/p&gt;&amp;mdash; Aui 2000 (@Aui_2000) &lt;a href=&#34;https://twitter.com/Aui_2000/status/788219753605193732&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;GGs to coL! NA grandfinal bo5s woo&lt;/p&gt;&amp;mdash; Avery (@SVGDota) &lt;a href=&#34;https://twitter.com/SVGDota/status/788219887126589445&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;first step&lt;/p&gt;&amp;mdash; EternaLEnVy (@EternaLEnVy1991) &lt;a href=&#34;https://twitter.com/EternaLEnVy1991/status/788227639215583232&#34;&gt;October 18, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Thank you to all our fans for their continued support!&lt;/p&gt;
+
+&lt;p&gt;Join the discussion &lt;a href=&#34;https://www.reddit.com/r/DotA2/comments/581mc7/congratulations_to_the_winners_of_the_summit_6/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>crabbymao</title>
+      <link>http://npgame.gg/gallery/crabbymao/</link>
+      <pubDate>Sun, 16 Oct 2016 20:12:42 +0000</pubDate>
+      
+      <guid>http://npgame.gg/gallery/crabbymao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogboy</title>
+      <link>http://npgame.gg/gallery/blogboy/</link>
+      <pubDate>Sun, 16 Oct 2016 20:12:34 +0000</pubDate>
+      
+      <guid>http://npgame.gg/gallery/blogboy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nprose</title>
+      <link>http://npgame.gg/gallery/nprose/</link>
+      <pubDate>Sun, 16 Oct 2016 20:12:23 +0000</pubDate>
+      
+      <guid>http://npgame.gg/gallery/nprose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>razorpicker</title>
+      <link>http://npgame.gg/gallery/razorpicker/</link>
+      <pubDate>Sun, 16 Oct 2016 20:12:10 +0000</pubDate>
+      
+      <guid>http://npgame.gg/gallery/razorpicker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>himitsumonogatari</title>
+      <link>http://npgame.gg/blog/himitsumonogatari/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:33 +0000</pubDate>
+      
+      <guid>http://npgame.gg/blog/himitsumonogatari/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Disclaimer: alright this is one fucking long ass blog. But I heard James&amp;rsquo; blog was 17 pages, this ain&amp;rsquo;t as bad.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Team Secret, a transparent organization for the players, this is what everyone first thought. I was proud to be part of such an organization when I first joined the team, I’m sure everybody was then. I asked Puppey whether it was difficult being a player and an owner. I was told that it wasn’t a burden, but instead something that empowers him, that I shouldn’t worry, just focus on the game. I was told that Kemal is a very successful man with multiple global businesses and he&amp;rsquo;ll take care of us.&lt;/p&gt;
+
+&lt;p&gt;Sometimes at a LAN we would talk about the future of Secret, Puppey would talk about how other organizations are fucking their players and how Secret will be different. That Secret will be the first team in DotA to get a 5 figure monthly salary. At first I thought it was just a joke, or something simply hopeful. But as we had the same conversation over and over again I started to believe that it could be real. Although during these times I didn’t get paid any salary, I didn’t think much about it and still chose to believe. I’m sure the rest of my team did as well.&lt;/p&gt;
+
+&lt;p&gt;Here we are now, after more than a year has passed. After talking to a multitude of people, including previous Secret members, I have decided to write this blog.&lt;/p&gt;
+
+&lt;h2 id=&#34;tournament-payout-delays&#34;&gt;Tournament Payout Delays&lt;/h2&gt;
+
+&lt;p&gt;On February 16 2016 I was at the Secret Turkey bootcamp when Evany’s blog: &lt;a href=&#34;http://www.twitlonger.com/show/n_1soaufn&#34;&gt;http://www.twitlonger.com/show/n_1soaufn&lt;/a&gt; was posted. I didn’t really think much about it as I had Shanghai Major soon and DotA was all that was on my mind. I remember Kemal and Puppey talking to the team about the whole incident. How it’s Starladder’s fault for making their bank account blacklisted, how it’s Matt’s fault for not responding to emails while he was at the hospital, how N0tail/Fly/Evany are stupid and don’t have the right to complain, and how Evany doesn’t deserve any money, and that she&amp;rsquo;s only being paid out of the kindness of their hearts. Excuse, after excuse, without ever taking any blame.&lt;/p&gt;
+
+&lt;p&gt;After the blog came out Kemal and Puppey assured us that it wouldn’t happen to us. Well, it did.&lt;/p&gt;
+
+&lt;p&gt;When a tournament pays out the money to Team Secret, Team Secret does not split and pay out the money to the team. It just sits there, and unless you hound them for it the money won’t move for awhile.&lt;/p&gt;
+
+&lt;p&gt;Misery was still owed 182K USD up ‘til September 26 2016 where he was finally paid that amount all at once. You expect an organization to send you the money when they receive it, obviously this isn’t the case with Secret as shown once again. I was missing 36K USD til September 14, why I was paid most of the prize winnings months ahead of Misery, or why I’m missing a random 36K USD at the end I’ll never know. But if Kemal can finally sit down one day and send me some prize winnings, why wouldn&amp;rsquo;t he also send the rest of the team that money? There’s some shady shit going on.&lt;/p&gt;
+
+&lt;p&gt;Misery wrote his own blog regarding his situation and his thoughts: (&lt;a href=&#34;https://medium.com/@MiSeRyDOTA/the-secret-is-out-25f26ceab1cc&#34;&gt;Link&lt;/a&gt;) I’ll just add one quick note, communications moved along a lot quicker once I changed my steam name to “blog boy” XD.&lt;/p&gt;
+
+&lt;p&gt;Not only does the process of Secret paying out their players get delayed. But also process of Tournament Organizers sending out money to Secret. People blamed Matt for taking forever to respond and do things in regards to payments, but now that Kemal has taken the reins it hasn’t changed at all. Just one example, Epicenter has already paid EG months ago. I messaged Epicenter to ask how come payments are delayed and they responded:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hey,&lt;/p&gt;
+
+&lt;p&gt;Sorry for delay on this, had a flight to Kiev. I’ve seen the payment confirmation, it’s been paid out on September 9th.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But yeah, it took us 3 months of continuous reminders to get the invoice from Team Secret.&lt;/p&gt;
+
+&lt;p&gt;Worse off, when I confronted Kemal about the Epicenter payment delays, he claims that he “doesn’t know” why and that Epicenter said they will pay on Oct 7. The lies just won’t stop.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/27.jpg&#34; alt=&#34;Click to zoom&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Click to zoom
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;10-winnings-cut&#34;&gt;10% Winnings Cut&lt;/h2&gt;
+
+&lt;p&gt;Not once on Secret have we ever talked about having a prize winnings cut to the organization. We have however discussed the complete opposite where we would talk about how it&amp;rsquo;s stupid to have a % prize winnings cut in DotA because of its abnormal prize pools. It was understood by everyone on the team that there would not be any prize winnings cut to the organization. Well, every player but Puppey.&lt;/p&gt;
+
+&lt;p&gt;Throughout the year I’ve been sent money in very random amounts, and I had no idea which tournaments the money came from. I’ve asked Kemal many times throughout the year to tell me what the money is for whenever he sends me a transfer but I didn’t get a report till Sept 8. I found out there&amp;rsquo;s a 10% Organization cut from reading the “rate” column on the spreadsheet. We were actually never informed of this. The current players of Secret also don’t know there’s a 10% cut. Here’s what Pie (who’s currently on the team) said when I told him:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/20.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;12:09 AM - Rem: did u get paid ur prize winnings&lt;/p&gt;
+
+&lt;p&gt;12:09 AM - Rem: did u know theres a 10% prize winnings cut&lt;/p&gt;
+
+&lt;p&gt;12:09 AM - Rem: secret takes&lt;/p&gt;
+
+&lt;p&gt;12:10 AM - LITTLE HUMBLE RABBIT: u sure&lt;/p&gt;
+
+&lt;p&gt;12:10 AM - LITTLE HUMBLE RABBIT: that doesnt sound right&lt;/p&gt;
+
+&lt;p&gt;12:10 AM - Rem: im 100% sure&lt;/p&gt;
+
+&lt;p&gt;12:10 AM - LITTLE HUMBLE RABBIT: jesus&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jesus indeed. When I found out about this and told everyone, everyone gave me the ?. I confronted Puppey about this and this was his response:&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/15.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/16.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/17.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/18.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/19.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I honestly have no idea what he means by his talks with Kemal and his lawyer. He then starts talking about player salaries. Contrary to popular belief, Secret 3.0 never had any player salary. So although Secret at that time was a top team in both popularity and tournament placements, not only did Kemal/Puppey not secure any sponsors but instead they took 10% of our money.&lt;/p&gt;
+
+&lt;p&gt;Secret later on did have salary for 3 months, but all that money came from PandaTV. I will be talking about the PandaTV situation later, for now I’ll just mention that Secret took almost 50% of the money in the PandaTV sponsorship. And their excuse for taking such a large %tage of sponsorship money was to pay Matt as well, so what money exactly is being paid to Matt? Although I’m mentioning Matt now, TBH it was a pleasure working with him, he’s an extremely smart guy who works hard at a LAN. Although he indeed did fuck up, he was in a hospital for some months for a serious medical condition, and the main culprit for the problems was Secret not setting up a bank account and that’s not Matt’s fault at all. I hope he actually does get paid though because there’s a lot of rumors going around that he hasn’t for a long time. Throughout the year the weirdest interactions with Matt would be whenever I ask him whether he gets paid, he’ll just be sad and ignore me.&lt;/p&gt;
+
+&lt;h2 id=&#34;secret-s-ideology-for-sponsorships&#34;&gt;Secret&amp;rsquo;s Ideology for Sponsorships&lt;/h2&gt;
+
+&lt;p&gt;Throughout Secret’s creation after TI4, Secret has always been a fan favorite. Being one of the most popular teams and one of the best throughout (well maybe not one of the best after Shanghai Major T_T). Then how is it possible that Secret hasn’t been able to provide salary to any player except until the last 3 months? As I mentioned in the introduction sometimes the team would talk about sponsorships. Often Puppey would talk about how sponsors are cheap stakes that are offering us dirt, and we won’t work with such sponsors. We will not be working with any sponsors for gaming peripherals, because it’s not cool (steelseries, etc). Apparently we are in the works with real sponsors offering real money and it won’t be long till we reach 5 figure salaries. “Trust” and “you know me” was thrown around alot and in the end it was just all hearsay.&lt;/p&gt;
+
+&lt;p&gt;I will talk about the PandaTV deal specifically later for now let&amp;rsquo;s go over everything else.&lt;/p&gt;
+
+&lt;p&gt;For the remaining sponsors 100TB, Nvidia, and EGB, I’ve been told that all 3 sponsors have not paid Secret any sponsorship money. Two of the deals (100TB and Nvidia) entailed no money and EGB who is suppose to provide money hasn’t paid. It’s just funny how other organizations are flamed for getting into deals that provide low amounts of money only for Secret to get into deals that don’t provide any money&lt;/p&gt;
+
+&lt;p&gt;Nvidia offers video cards but I still haven’t received it yet even though I’ve been told I’ll get one since the partnership. At first we were promised the 980 card but then it got postponed. It got further postponed when we were told instead of getting that card we&amp;rsquo;ll wait for the 1080 to come out and we&amp;rsquo;ll get that one instead. After the card came out there wasn’t enough supply for for us and we still haven’t received the video cards yet.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/28.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;EGB is a betting website that was suppose to be a sponsorship deal paying cash. Apparently they have not paid any money and Kemal says “I wished they paid.” Somehow they are still working together so EGB probably paid up (and Kemal is probably lying), but the previous members of Secret that also played under that sponsorship will never see that money.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/26.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;As for MetaThreads the Jersey sponsor, Puppey has mentioned that the money from the jerseys isn’t much and that it will go into paying for food and other expenses. Secret has claimed to be open about everything and transparent but they have never told us how much they make from them even though I’ve asked sometimes.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/30.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Puppey and Kemal have always treated us to dinners at every LAN and always said “its ok I’ll pay for the food.” I remember one dinner at Manila, Puppey said he’s not sure if he&amp;rsquo;s suppose to tip but he’s going to, and I told him it’s not necessary to tip in asian countries. He responded: “Why don’t you pay then?” Now I realize that the things Secret “paid for” in reality came from our prize winnings.&lt;/p&gt;
+
+&lt;p&gt;When Kemal came to Manila Major, he got himself an executive suite and told us we could buy whatever food we want and charge it to his room no problem. Well we did just that, and I’m sure that money came from the prize cuts in the end ;D.&lt;/p&gt;
+
+&lt;p&gt;I’ve always been a player who believes that solo rooms are very important at LANs. I’ll be doing that for NP too if we ever qualify for any LAN T_T. Anyway, Secret usually helped us secure solo rooms, though usually the tournament gives special treatment and provides it themselves. Many times I told Kemal I’m willing to pay for my own room if the tournament won’t provide it and he would respond “naw man I got you covered don’t worry about it just play your DotA.” If we’re covering for it ourselves indirectly, just tell us.&lt;/p&gt;
+
+&lt;p&gt;It’s not like the players expect everything to be provided, we understand that we will lose something. We just thought things would be transparent as claimed. We want to know if the player’s money is gonna go into something.&lt;/p&gt;
+
+&lt;p&gt;The bootcamp setup in Turkey was quite nice. The players understood that some of the Panda money will be going into paying for it. However, the Panda deal falls apart within 3 months, due to Puppey not fulfilling his streaming hours. I hope Kemal didn’t mean that he will pay off the rent for the entire year with the first payment from Panda. Flights to the bootcamp and etc, we were always told to not worry and that Kemal will cover for it as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;pandatv-deal-explanation&#34;&gt;PandaTV deal Explanation&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;(Sorry if this part of the blog is long, I don’t really know how else to write this part except to give near the full story.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As I said earlier there were 3 months where we received a salary, this money all came from the PandaTV deal. I will be explaining how this deal came about and how it was dealt with till the end.&lt;/p&gt;
+
+&lt;p&gt;There was a short amount of time between StarLadder I-league Season 1 and MDL S2. I asked my team if we were going to scrim for this tournament and it didn’t seem like we were that interested in doing so. So I decided that it would be better for me to fly directly to China from Starladder so that I could get use to the jet lag instead of flying home and immediately in a few days fly to China.&lt;/p&gt;
+
+&lt;p&gt;As I still needed a legit place to play at I set up a deal with HUOMAOTV to let me play at their office and pay for my hotel in exchange for me streaming for them.&lt;/p&gt;
+
+&lt;p&gt;I got massive viewers during this time because the Chinese fans love watching chinese players flame me and me smiling and not knowing what the hell they are talking about.&lt;/p&gt;
+
+&lt;p&gt;I’ve heard many stories of Chinese streaming deals being extremely high in payout and at this time Secret was in talks with Twitch for a deal. I thought it would be interesting to see if any Chinese platforms would be interested in sponsoring Secret.&lt;/p&gt;
+
+&lt;p&gt;During that week I contacted Panda and arranged a dinner with one of their top executives. Streaming deals in China are normally player only deals, they offered me 500k USD (this is an extremely high number in comparison to normal Chinese deals even) but I told them I will not cooperate unless my teammates get a deal.&lt;/p&gt;
+
+&lt;p&gt;Had I taken the deal, probably could have been signed in February but since it&amp;rsquo;s now more complicated as a team deal the process took longer. Fast forward till March, we win Shanghai Major, and we have another meeting with Panda. At this point in the deal the deal was 1 million + 250k in donations for the year and if we get RTZ/Universe it would be 1.25 million + 250k in Donations. The money would be paid quarterly at the beginning of the quarter. We also talked about the number of hours to be streamed.&lt;/p&gt;
+
+&lt;p&gt;For Secret there were two goals in this meeting, to negotiate a price as high as possible while also negotiating the lowest number of hours streamed a month as possible. At first everyone had a minumum streaming requirement, but we negotiated that it’s only important that RTZ, me and Puppey have this requirement. Puppey said he could stream 40 hours every month but I told him it’s fine if you have lower hours and you add those hours to mine. I believed that RTZ would stream but I knew Puppey doesn’t play much. I asked Puppey if he&amp;rsquo;s going to start playing more and stream and he assured me that he could do it, and it’s time for him to play more DotA.&lt;/p&gt;
+
+&lt;p&gt;The final deal consisted of minimum stream hours of 30 for both RTZ/Puppey and 60 for myself. However the team all together had to stream 250 hours a month. We can make up for these hours within the quarter if we fail to monthly, and honestly as long as we stream a good amount Panda won’t care. During that meeting we understood that in order for the deal to work out, I would need to stream more hours to make up for the rest of the team. I assured Puppey/Kemal that I could stream about 90 hours a month and that I won’t fail to uphold my part of the deal.&lt;/p&gt;
+
+&lt;p&gt;Fast forward, here are the hours that we streamed from Mid April till the end of June (monthly). I actually kept streaming even after all these months but we failed our end of the deal so I never received another team hour report. Noticed that not only did Puppey not uphold his end of the deal, but he didn’t even try. Streaming not 30 hours a month as promised but 12 hours in 3 months. We were actually together at the bootcamp for a large portion of these months, so if I could stream why couldn’t he? If we weren’t in scrims, he was either playing custom games, playing guitar, or going out and doing who knows what with Kemal.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/IMG_1270.PNG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Regardless as we were paid quarterly, we received our payment for the first 3 months of streaming. The amount was 1.25 Million / 4 = 312.5K USD. The 250k in donations will come at the end of the year, since the deal died early we can ignore all that. The only cash we can talk about is this 312.5K USD.&lt;/p&gt;
+
+&lt;p&gt;Anyway TI was approaching and I didn’t really think much of it till TI was over.&lt;/p&gt;
+
+&lt;p&gt;TI ends and I decide to create my own team. Secret wants to sponsor us as Secret.NA. I will be going over some of these logs, however I will post all of them.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/1.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;A classic discussion between you and Kemal. A lot of big name sponsors being thrown around. How are these sponsors “active” when we haven’t been receiving shit from any of them but Panda. There’s no possible way both PandaTV + HuomuoTV are active as they compete and its the same for RedBull + Monster. I talked with management from other organizations and they all told me there’s no way any sponsor like Coke Cola is interested in Secret.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/2.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Not much was said, I didn’t really want to respond once he named all those sponsors.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/3.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Gatorade &lt;img src=&#34;http://npgame.gg/himitsumonogatari/lul.png&#34; style=&#34;height:28px&#34;&gt;&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/4.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;He flames me a bit here :(&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/5.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/6.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;15K monthly salary guys&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/7.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/8.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/9.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/10.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I already talked with Panda and understood the deal is completely dead.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/11.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/12.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/13.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;BULBA T_T&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/14.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;This is the classic excuse Kemal uses. You’ll see this vacation excuse later on in my blog and in Misery’s as well. Apparently the handling of money isn’t messy at all. He never emailed me a list several months ago that’s bullshit. I can’t find it in either of my emails.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/15.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;As I thought it’s bullshit, he can’t remember where he sent the list.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/16.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;We talking about the Nvidia Video cards we were promised 8 months ago. He says he’ll get the cards to us in 2-3 weeks, it’s been 6 weeks since that conversation.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/17.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;How can he be so confident that the deal is going to happen. I’ve already been talking to the Panda guys. It’s 100% not happening, same bullshit.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/18.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Both pre Shanghai Major, and during a dinner after Shanghai Major, we were promised that when we get this Panda deal we will get a minimum of 12K monthly salary. Even 14-15K is highly likely. This was said by both Kemal and Puppey. At this point in time the deal was 1 million USD + 250K in donations a year. With the roster change, the new deal is 1.25 Million + 250K in donations a year. Notice that if we take out the donations from the second deal, it just becomes the first deal with the donations (1.25Mill = 1Mill + 250K in donations). What this means is that there’s no excuse for Kemal saying we lose 4K in salary because we aren’t receiving the donations. For us to have the same salary when there’s an increase in 250K in the deal after RTZ/Universe joined the team is already fucked up.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/19.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/20.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/21.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/22.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We received 3 months worth of payment because payments are done quarterly. 1.25Mill/4 = 312.5K USD. 120K goes to the players (5players * 8K * 3 months), 3K goes to Distilled (1K*3), 45K goes to coaches/manager (Aui/Theeban/Matt). There’s 144.5K USD left or 46%. Sure maybe Secret isn’t pocketing this money, they will use this money to pay their other games, SEAcret, and the entire house rent for the year. But that’s fucked up. That money came directly from the team, and half of it shouldn’t go into things unrelated. It’s sad that I cannot say who is still missing their salary because a lot of people still haven’t been paid. Maybe later I will be given permission and I’ll say it. But Secret is actually holding a lot more money and I’m actually giving them way more credit than they deserve.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/23.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/24.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/25.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/26.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/27.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The 100TB guy tried his best to do what he said, he didn’t fuck anyone. The only guy he fucked was Kemal by out negotiating him.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/28.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;It’s not the first time I heard about the 100TB deal, but it&amp;rsquo;s the first time I heard that all other sponsors aren’t paying any money like EGB&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/29.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/30.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/31.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/32.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/33.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/34.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I fucked up and mistakened him talking about the panda contract for our contracts. I’m just raging embarrassingly im sure.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/35.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/37.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/kemal/38.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;After this I went and messaged Puppey 2 days later:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/1.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;failed math regardless still a large portion of money missing&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/2.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;15K monthly salary after Panda Sponsorship as discussed&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/3.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The deal was set up for DotA only, and only 50% of it goes back into DotA&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/4.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I don&amp;rsquo;t understand why donations keep being mentioned, I am only discussing the 312.5K USD that was already sent and received.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/5.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/6.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;He never said 8K&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/7.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Puppey claims that the money is only deserved by 3 people (RTZ, Me, Puppey). I actually assumed from this entire conversation after it was over that RTZ/Me and Puppey would be getting the 15K monthly salary and the rest would stick with 8K. It’s a bad assumption from me.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/8.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/9.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;After this I understood that “I promise you we will get the correct share as I promised before” and “I’m trying to make things right” meant that we will be receiving the 15K monthly salary as promised. I was apparently wrong as we will see later.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/10.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I don’t understand why things need to be postponed, there’s no reason to wait. I am only discussing the money that is already in their pocket.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/11.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Ok I will write that story. But TBH I wasn’t gonna write a story because I thought I would be given the 15K monthly salary as promised, and I didn’t wanna write something where I’m only gonna talk about how my payments have been delayed and they are super lazy. However, Misery/W33 came to me and told me they were also having problems. After this I decided to actually write the blog but I wasn’t even gonna talk too much about Puppey. But after realizing that Secret took a 10% Cut only a few days ago, I’ve decided to talk about Puppey as a whole. This will come after this part of the blog.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/12.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/13.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/14.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This conversation happened on a different day. I believed from our previous conversation that “I will get the correct share as promised before” meaning 15K. He just reads it and ignores me.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/15.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;This is the day I found out there’s a 10% cut, TBH had Kemal not wrote 18% Rate on the excel sheet, most likely no player would have ever found out ever.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/16.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I don’t understand why is Kemal’s lawyer involved all of a sudden. 90% of the prize money we won came from Shanghai Major or before, and we never had a salary then. And the salary came directly from the Panda deal.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/17.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;No we have never ever talked about having a tournament cut. There’s no way the 10% is basically paying the manager. Secret won over 2 million dollars this year, 10% of that would be 200K USD (excluding TI winnings). When we played TI, valve makes you sign an agreement for cuts. And of course there was never a 10% cut of our TI winnings because we never agreed on any in the first place.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/18.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/19.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I’m gonna go over the remaining logs with Kemal after the first talk with Puppey (the 2nd talk may be after these logs). Honestly formatting all this is so hard, I’m not even sure if it&amp;rsquo;s showing anything, but i’m gonna do the rest for completion’s sake. I did cut white out some stuff though as I was not given permission to discuss it from other parties and it&amp;rsquo;s not important anyway.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/20.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I’ll send it tomorrow, I gave him 2 days instead, once again tomorrow!&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/21.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/22.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I’m actually so confused why this “office” matters. There’s no way there are things he absolutely needs from this office that he owns himself. Anyway is he even reading what I’m saying. I’m saying I’m owed 21K because of the promise of a 15K monthly salary. He doesn’t seem to deny it. But later on you’ll see that he does. W/e ask him on monday guys.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/23.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Hey its fucking tuesday, he’ll look tomorrow I guess. What the fuck do you mean I’m wrong, tell me that earlier instead of wasting some days.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/24.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/25.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Does Kemal and Puppey even communicate with each other. How does Puppey tell me he hasn’t heard what I talked to Kemal about and now vice versa.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/26.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I asked Epicenter, Secret already got paid. Did he even check honestly; probably not.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/27.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;This is once again around when I found out there&amp;rsquo;s a 10% cut. TBH I would have never realized if W33ha didn’t tell me there’s a lot of money missing and I checked this.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/28.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Come back Kemal… I need you! Why you always gotta leave me every other week T_T. N give me my video card.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I went over the entire story of the Panda incident. Basically the bottom line is that the first sponsor that provided money to Secret wasn’t even sought out by them. Then Puppey himself failed to uphold the streaming hours and failed the contract. Afterwards they lied about the salary and withheld 46% of the Sponsorship money for non DotA related things (Manager, Coaches already accounted for). A lot of the people they supposedly paid salary too weren’t paid anyway.&lt;/p&gt;
+
+&lt;h2 id=&#34;puppey&#34;&gt;Puppey&lt;/h2&gt;
+
+&lt;p&gt;Puppey and I were very close for the majority of the year. He was never a guy that praised anyone really, usually he would rant about everything, flaming everything. One time at MDL as he was flaming some people, I asked him: how come you always flame everyone, is there anyone you even like. He responded “well…. I like my Mom, my girlfriend… you.” It was a pretty gay moment but it was really memorable to me. After Shanghai Major, we talked and he told me that I’m the best teammate he&amp;rsquo;s ever had and that he would like to play with me forever. Back then, I said the same to him. I remember during Epicenter, me and RTZ played really bad one game and he only said some minor things about me then argued with RTZ for a long time. RTZ asked him: hows this fair, why aren’t you harping on Envy more. Puppey responds: because I know him, he’s a good friend, and he gets it already.&lt;/p&gt;
+
+&lt;p&gt;I will go over more stories later, but for me the true redefining moment was post TI. After we lost to LGD a valve employee asked Puppey to do the loser’s interview. He responded: “Why don’t you ask the person responsible for losing us TI to do the interview (implying me).” I wasn’t there for this, but some of my ex teammates responded “that’s not true.” Afterwards we don’t talk for a few days, even when we bump into each other sometimes at the practice room we don’t even look at each other. During these days he talked with some of my ex-teammates trying to convince them that TI was all my fault. I don’t have a problem with any of this TBH. My problem comes from the day of the Grand Finals. At this point Secret was already trying to sponsor my new team. Puppey and I meet up in a venue suite, he tells me that we should stay friends. We talk a lot about the year, and he blames Artour for everything that happened to Secret. I tell him, “I don’t really care for any of that. I just thought I was just gonna be another one of your ex-teammates that you will flame to everyone. I thought you hated me and think I was the one responsible to losing you TI”. He says “No I never blamed you for anything, who told you that?” (trying to get the rat out). Then he comes up and hugs me. That hug was probably one of the angriest moments of my life.&lt;/p&gt;
+
+&lt;h2 id=&#34;laziness&#34;&gt;Laziness&lt;/h2&gt;
+
+&lt;p&gt;Puppey is one of the most accomplished players in the scene. I will not take anything away from that. I am not gonna dismiss his skills or whatever, I only want to talk of his personality. It’s true that he is a charismatic person with high confidence, but now I believe that he builds his confidence by looking down on everyone else.&lt;/p&gt;
+
+&lt;p&gt;Throughout the year he has always been lazy. At first I thought that he was just burnt out after losing TI5 and I accepted all that but eventually I realized it’s just how he is. All the way till the TI bootcamp in late mid June, he almost never plays any pubs. He played like on average less than 5 pubs per month. This only changed when TI was approaching and one time where he played 10 Earth spirit games after MDL. He would always claim that he was busy from Secret and other responsibilities. But even during our bootcamps or the tournament itself, he would only be playing custom games. Now if he doesn’t need to play any pubs then that’s all fine, the problem is that our captain would generally not show up to the practice room at all. This happened at every major except Shanghai Major. For Frankfurt Major he probably played 20 hours of Legion TD, and that’s a lot considering he rarely came to the practice room. Against Vici Gaming, our match was scheduled to start at 6 PM only for him to show up at 5 PM. Everyone was like “Where’s Puppey?” There was a break day between the VG Series and the EG Series, so Puppey decided to get drunk and sleep at 6 AM. The following day, he didn’t show up to the venue at all.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to Shanghai Major where we barely scrimmed (till Shanghai Major bootcamp), and Puppey playing very few pubs. At Shanghai Major one huge thing changed, Puppey didn’t start playing pubs all of a sudden, nor did he stop being late almost everyday, but he actually showed up to the practice room every single day. He played two pubs that event, for one of those games instead of drinking during the break day he actually msged me and told me to come play a pub with him. He didn’t drink a single time that event till the after party. At the practice room he was still playing only Elemental TD but at least he was there so morale wasn’t lost.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to Manila Major, things didn’t really change. He didn’t play any pubs as per usual, and even though we got this streaming deal, he didn’t play any pubs to uphold deal that either. Maybe at home he may be very busy, but at a bootcamp/event where we’re all together, there’s no way he&amp;rsquo;s that much more busy than any of us. Enter Manila Major, we decided to all be at the practice room by 10 am everyday. That night he stayed up and drank with PGG and had a hung over the next day. He doesn’t show up for our scrim against Newbee at around 3 pm and we had to use our coach Theeban as a standin (2404412433 match ID too bad it’s not available).&lt;/p&gt;
+
+&lt;p&gt;At this point of the team, there was a lot of cancer going around, and I was definitely tanking a lot of shit. During this time Puppey would actually treat me very poorly but he would recognize it from time to time. As the log shows, even after he says those words of encourage me still shows up 90 minutes late the next day. (this was during Manila Major)&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://npgame.gg/himitsumonogatari/puppey/30.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The night Universe was gonna leave for EG, me him and 1437 (aka Rose…) were together for a few hours discussing things. Before this conversation, I had a talk with Puppey. He told me that he wanted to build a dynasty, that it’s time to stop fucking around, that we have finally hit rock bottom, we have nothing to lose, and we have to try our hardest to climb back up. He also told me that he’s been treating me unfairly and that things will be better from now on. I chose to believe in him and support him like I fucking did throughout the majority of the year. And so when one of Universe’s problems was Puppey not trying hard enough, I defended Puppey as much as I could. I told Universe that things will be different, that Puppey is gonna change, that we&amp;rsquo;re finally gonna understand where we stand and rise up together. I shed a tear that night; I really wanted us to stay together.&lt;/p&gt;
+
+&lt;p&gt;From the start I was actually supporting Puppey. When I first joined this team I thought he was so arrogant, but I told myself this is how you maintain discipline, basically made up any excuse I could come up with in my head to defend him. Whether he was right or wrong I would never argue back in front of my team, always choosing to handle it privately. When the team was arguing with him on teamspeak I would message them to chill, that he’s your captain and respecting him is a foundation of the team. This guy still lies to my face at the very end.&lt;/p&gt;
+
+&lt;p&gt;We go straight to the bootcamp for the TI qualifier after Manila Major. Things felt amazing, Bulba brought in a lot of new ideas, we thought we were learning with every passing day; it was a breath of fresh air. Then after the qualifier even though we were supposed to “keep going,” Puppey decides that we shouldn’t go to Nanyang, because they didn’t book us the business flights they agreed to and instead got us economy. So we didn’t go to Nanyang or qualify for BTS. We didn’t scrim till the boot camp a month later and lost all momentum.&lt;/p&gt;
+
+&lt;p&gt;This is the first point where I actually really start disliking Puppey. Eventually the lies get to you. I don’t mind him having a tyrant on the team if he at least does what he promises to do. But when he&amp;rsquo;s so lazy and lies about everything only for him to spew lines like “When I talk, you listen to me.” is actually so disgusting. Even though me and Aui were being somewhat disruptive, there’s no way that line can be said to us.&lt;/p&gt;
+
+&lt;p&gt;Finally the bootcamp starts in California. TI pressure starts kicking in I guess because Puppey actually starts playing pubs, trying much harder, and becoming much more serious than before. I wish this was a good thing but he just started becoming more asshole-ish. Even though we agreed to put the coaches above the players including the captain, he started treating the coaches like shit. I guess when you suddenly try after being lazy the whole year, you can’t really cope with it.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to TI, at this point I’m really disappointed in Puppey, and I’m not the only one. I tried my best to bottle it up though. But I fucked up one of the scrim days. Puppey has been being passive aggressive for a few days now, and Pieliedie was having a rough game and was being annoying. I told Pie to shut the fuck up. For the rest of the scrim even though me and Pie were sitting next to each other and understood that we’re still boys, Puppey just kept being passive aggressive to me. After the game me and Pie apologize to each other right away and we’re actually completely fine with each other. I played with Pie longer than any player in my life. Puppey who didn’t hear the apology continues to rant about me. I told him to fuck off and he says if I got a problem with him I should go fuck myself.&lt;/p&gt;
+
+&lt;p&gt;20 minutes later, I walk to the player dinner with him alone. We’ve been playing for almost an entire year and this is the first time I’ve shown him backlash. Still you could tell he tried his best to show disinterest in what I have to say. He eventually just goes into a rant where he tells me how he follows the team rules more closely than anyone (which he doesn’t), how he talks to everyone in an authoritative tone to discipline, and that he has no real problems, and that all his problems are minor and there’s no point discussing them. One of our rules was to stay as 5 throughout TI, during that player dinner he goes off with with Matt alone, and the rest of the team eats dinner and goes back to the practice room themselves without him. We never talked about that argument ever again.&lt;/p&gt;
+
+&lt;h2 id=&#34;egotistical-and-aggressive&#34;&gt;Egotistical and Aggressive&lt;/h2&gt;
+
+&lt;p&gt;Puppey usually handles himself very well, he’s a very confident person. I’m not sure if it’s because he’s been in the scene for a long time or whatever. It’s probably from a combination of things. Regardless, I am not claiming that him being confident means he&amp;rsquo;s egotistical, I am trying to separate the two.&lt;/p&gt;
+
+&lt;p&gt;What I mean by him being egotistical is that he always flames everyone. Whether it being SirActionSlacks is a dumb clown, and that the people who like him are retards (I like Slacks XD, I retard). Or flaming every single ex-teammate he’s ever had except Zai (probably because Zai doesn&amp;rsquo;t argue back). I don’t even know how he brings up these people from time to time, he just flames everyone. It’s extremely rare that he praises people, always spinning reality in a way that takes away the praise. For example when OG won Frankfurt Major and we were talking in regards about N0tail, he said: some people deserve to win, and others are pulled up by them. Generally when he praises people, he’s always trying to convince you of something, it always has to come back to him. Like he’ll praise Universe/RTZ before they join, then flame them once they leave.&lt;/p&gt;
+
+&lt;p&gt;Though the above honestly didn’t matter in a team environment. TBH it was sometimes funny, and it was interesting to hear some of his opinions.&lt;/p&gt;
+
+&lt;p&gt;What mattered though was that he would never admit that he is wrong. There always has to be an excuse one way or another (go back and read the logs). After Manila Major, he told me that I shouldn’t question why he’s late or doesn’t show up, that I should be instead believing in him, that whatever he’s doing is important and for the team. Generally things stay pretty chill, since Puppey doesn’t really get heated too fast, and before you argue with him too strongly, you just go: I give up what’s the point. Sometimes though things do get heated.&lt;/p&gt;
+
+&lt;p&gt;Every time things get heated and you argue with him. He will ask you a common question: You wanna see who’s right or wrong? Fight me. During MDL S2, where we have been having bad results for some time, W33ha and Puppey got into an argument. Puppey gets up from his chair and goes all up in W33ha’s face and screams “DO YOU WANT TO FIGHT? STOP BEING CANCEROUS.” Everyone just stayed silent after. He was always bullying W33ha throughout the entirety of Secret.&lt;/p&gt;
+
+&lt;p&gt;During the Manila Major bootcamp (once again we had bad results in tournaments recently) we lost a scrim and Puppey and RTZ were arguing over some bad plays. I entered the argument because I believed that the picks were more important to talk about. Puppey disagrees and we get a bit heated. Before long Puppey slams the table and his keyboard’s keys fly everywhere. Once again everyone just stayed silent. Though unlike last time he followed up by pointing fingers at everyone and said “If you guys want to talk about who&amp;rsquo;s right or who&amp;rsquo;s wrong, why don’t we fight.”&lt;/p&gt;
+
+&lt;p&gt;To be honest I didn’t really look too much into it when both these occasions happened. Back then I kinda just believed in Puppey no matter what so it didn’t really affect me. The first time he did it to W33ha I got scared of what’s to come. But when he did it to me and RTZ, I kinda just accepted it and thought: well if he&amp;rsquo;s this angry I probably fucked up.&lt;/p&gt;
+
+&lt;p&gt;Well now I think differently. Sadly I don’t really have much proof for the later part of this blog. If Puppey claims that I’m lying then I can only bring in my ex teammates to back me up. Though unrelated, I do have proof through a different incident.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://my.mixtape.moe/qhomwu.mp4&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For this video Puppey told me he was playing a shitty pub. Kuroky and Zai were playing some custom game and were having “way too much fun.” Puppey got mad and threw his headset at the monitor. The monitor did break by the way, so Secret had to pay for a new one. When I asked him about the incident, he said he was just putting down his headset angrily, and that the monitor was defective and that’s why it broke. He didn’t know at the time I had the video though. This was right before Shanghai Major. During Shanghai Major I showed him the video. He told me that if I ever leaked the video he’ll kick me from Secret. Well, I’m not part of Secret anymore. I promised him back then that I wouldn’t show anyone this video except the team. I break that promise today, hopefully it’ll be the last promise I break.&lt;/p&gt;
+
+&lt;h2 id=&#34;ending-statements&#34;&gt;Ending Statements&lt;/h2&gt;
+
+&lt;p&gt;This has been a fucking long ass blog. I was originally going to post it in parts, but that ain’t me. I hope people actually read the whole thing.&lt;/p&gt;
+
+&lt;p&gt;Anyway, Secret still owes me $29333 for the 10% Prize cuts, though I don’t expect that money back. Nor the 21K from the salary they promised. Hopefully they will pay me for the rest of the tournaments when they pay out (Epicenter already paid though, even though Secret claims they haven’t). I know a lot of players/coaches haven’t gotten paid yet. Please make sure you get paid! Oh there’s also that 1080 video card promised half a year ago.&lt;/p&gt;
+
+&lt;p&gt;Oh shit I just realized, Secret bought like drones, hired a porn star, and a few models during TI. They also flew in two of the CSGO girls. Doing all this is fine, but the lessons from this year told me that it probably indirectly comes from the players’ pockets.&lt;/p&gt;
+
+&lt;p&gt;Secret has taken a cut of approximately 340K USD (assuming they paid everyone which they did not, and EGB/Meta don’t account for any $). Anyway I’m sure that amount covered for all the expenses throughout the year. Hell, if the SEAcret boys were offered a salary, that’s where it comes from. Players like W33/Misery together gave Secret approx $56000 from prize cuts without gaining a single salary the entire year. I have given them $29333, and gained 24K in salary, for a total of -5K for the year. We actually lost money playing for Secret.&lt;/p&gt;
+
+&lt;p&gt;It has been a long year, probably my most successful and memorable DotA 2 year. Although the last half of the year has been pretty brutal, I won’t forget it and I will learn from it.&lt;/p&gt;
+
+&lt;p&gt;I’m sure people are going to talk about verbal agreements a lot and that I’m stupid for not signing a contract. Well maybe so. Regardless I’m going to run my own org this year and ask my team to be stupid and believe in me. The Secret that was meant to be, hopefully I will be able to bring it to reality.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>wesg</title>
+      <link>http://npgame.gg/gallery/wesg/</link>
+      <pubDate>Sat, 15 Oct 2016 20:31:41 +0000</pubDate>
+      
+      <guid>http://npgame.gg/gallery/wesg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://npgame.gg/players/aui/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:47 +0000</pubDate>
+      
+      <guid>http://npgame.gg/players/aui/</guid>
+      <description>&lt;p&gt;From winning MLG Columbus with Speed Gaming to DAC with EG, Kurtis &amp;lsquo;Aui_2000&amp;rsquo; Ling has been a staple in the DotA 2 scene since early 2012. Applying his keen mind for theorycraft and farming efficiency, he later went on to reach the pinnacle of DotA: first place at The International 2015. Recently a sub and coach for Team Secret, the former 1 position for Dignitas seeks to return to his roots and will play the carry role for Team NP.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://npgame.gg/players/envy/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:47 +0000</pubDate>
+      
+      <guid>http://npgame.gg/players/envy/</guid>
+      <description>&lt;p&gt;Jacky &amp;lsquo;EternaLEnVy&amp;rsquo; Mao has played for many accomplished teams of his own creation, the likes of nth, C9, and Team Secret. With a new year of DotA ahead, the Shanghai major-winning carry player looks to do it once again, taking the helm of a fresh roster as captain and drafter. The polarizing yet always entertaining figure will be playing the mid role for Team NP.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://npgame.gg/players/mss/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:47 +0000</pubDate>
+      
+      <guid>http://npgame.gg/players/mss/</guid>
+      <description>&lt;p&gt;In his early career, Arif &amp;lsquo;MSS&amp;rsquo; Anwar quickly made a name for himself by standing in for well-known American teams like Team Liquid and Evil Geniuses. He was one of the top offlaners in the NA region before taking a break from the professional scene to focus on college. A promising player and a force to be reckoned with, MSS returns this year and will be playing the offlane position for Team NP.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://npgame.gg/players/svg/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:47 +0000</pubDate>
+      
+      <guid>http://npgame.gg/players/svg/</guid>
+      <description>&lt;p&gt;Avery &amp;lsquo;SVG&amp;rsquo; Silverman first broke out onto the scene in late 2015, quickly becoming one of the best &amp;lsquo;4&amp;rsquo; players in NA. After a roster shuffle left him teamless, SVG was quickly picked up to coach EG who then went on to place 3rd at TI6. Eager and hungry to win, SVG returns to playing DotA as the support position for Team NP, primarily the 4 role.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://npgame.gg/players/1437/</link>
+      <pubDate>Sun, 16 Oct 2016 01:00:47 +0000</pubDate>
+      
+      <guid>http://npgame.gg/players/1437/</guid>
+      <description>&lt;p&gt;A veteran player from the DotA 1 days, Theeban &amp;lsquo;1437&amp;rsquo; Siva has played at 4 TIs and coached 2. He is well-known for coaching Team Secret during their incredible pre-TI5 run where they won multiple LANs in quick succession. He later went on to become the acclaimed coach responsible for the Shanghai-winning Team Secret roster. This season, 1437 returns to the competitive scene bringing with him a wealth of knowledge. He will play the support position for Team NP, primarily the 5 role.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
